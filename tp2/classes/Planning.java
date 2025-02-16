@@ -1,3 +1,5 @@
+package classes;
+
 public class Planning {
     private Reservation[] chTabReservations;
     private final int TAILLE;
@@ -54,17 +56,16 @@ public class Planning {
 
     public Reservation getReservation(Date date){
         for (int i = 0; i < chTabReservations.length; i++){
-            if (chTabReservations[i] != null && chTabReservations[i].chDate.equals(date)){
+            if (chTabReservations[i] != null && chTabReservations[i].chDate.compareTo(date) == 0){ // Utilisation de compareTo
                 System.out.println("trouvé");
                 return chTabReservations[i];
-
             }
         }
         return null;
-
     }
 
-   
 
-    
+
+
+
 }

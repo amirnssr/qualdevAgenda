@@ -1,7 +1,7 @@
 public interface ConstantesErreurs {
     public final String [] ERREURS_PLANNING={
         "Réservation invalide",
-        "Planning complet",
+        "classes.Planning complet",
         "Réservation incompatible"
     };
 }

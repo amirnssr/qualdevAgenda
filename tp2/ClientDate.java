@@ -1,7 +1,9 @@
+import classes.Date;
+
 public class ClientDate {
     public static void main (String [ ] args){
         Date dateTest= new Date(2005);
-        //Date dateTest=new Date();
+        //classes.Date dateTest=new classes.Date();
         System.out.println(dateTest.toString());
         Date tryD= new Date(31 ,4,2022);
         System.out.println(tryD.estValide());

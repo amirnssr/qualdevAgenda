@@ -1,3 +1,5 @@
+package classes;
+
 public class Horaire {
     private int chHeure;
     private int chQuartHeure;

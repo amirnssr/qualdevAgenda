@@ -1,3 +1,5 @@
+package classes;
+
 public class ExceptionPlanning extends Exception {
     public int chCodeErreur;
     

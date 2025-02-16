@@ -1,3 +1,5 @@
+package classes;
+
 public class Reservation {
     public Date chDate;
     public PlageHoraire chPlageHoraire;

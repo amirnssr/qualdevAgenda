@@ -1,3 +1,5 @@
+package classes;
+
 public class PlageHoraire {
     final static int chDUREEMIN = 60;
     private Horaire chHeureDebut;

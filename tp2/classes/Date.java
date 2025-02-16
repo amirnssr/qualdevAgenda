@@ -1,3 +1,5 @@
+package classes;
+
 public class Date {
     protected int chJour;
     protected int chMois;
@@ -78,7 +80,7 @@ public class Date {
         int anneeHier = chAnnee;
         
         if (!estValide()) {
-            System.out.println("Date invalide");
+            System.out.println("classes.Date invalide");
 
         }
 

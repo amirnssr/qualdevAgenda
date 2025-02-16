@@ -1,5 +1,14 @@
+package test;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import classes.Planning; // Exemple d'importation d'une classe du package principal
+import classes.Reservation;
+import classes.Date;
+import classes.ExceptionPlanning;
+import classes.PlageHoraire;
+import classes.Horaire;
 
 class PlanningTest {
 
@@ -35,7 +44,7 @@ class PlanningTest {
         Planning planning = new Planning(8);
         Reservation r1 = new Reservation(new Date(10, 2, 2025), new PlageHoraire(new Horaire(8, 0), new Horaire(9, 0)), "Sport");
         planning.ajout(r1);
-        assertEquals(r1, planning.getReservation(new Date(10, 2, 2025)));
+        Assertions.assertEquals(r1, planning.getReservation(new Date(10, 2, 2025)));
 
         assertNull(planning.getReservation(new Date(1, 1, 2025)));
     }

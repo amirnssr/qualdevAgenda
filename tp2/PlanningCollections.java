@@ -1,3 +1,5 @@
+import classes.Reservation;
+
 import java.util.ArrayList;
 import java.util.TreeSet;
 public class PlanningCollections {

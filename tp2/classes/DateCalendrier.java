@@ -1,3 +1,4 @@
+package classes;
 
 import java.util.Calendar;
 
@@ -52,7 +53,7 @@ public class DateCalendrier extends Date implements ConstantesCalendrier,Compara
     
     
     public String toString(){
-        return JOURS_SEMAINE[chJourSemaine-1]+" "+ chJour +" "+ MOIS[chMois-1];
+        return ConstantesCalendrier.JOURS_SEMAINE[chJourSemaine-1]+" "+ chJour +" "+ ConstantesCalendrier.MOIS[chMois-1];
     }
 
     public int compareTo(Date date){
