@@ -7,6 +7,16 @@ public class Planning {
         chTabReservations = new Reservation[TAILLE];
     }
 
+    public int getTaille(){
+        return TAILLE;
+    }
+
+    private void fillPlanning(Planning planning) throws ExceptionPlanning {
+        for (int i = 0; i < planning.getTaille(); i++) {
+            planning.ajout(new Reservation(new Date(i + 1, 2, 2025), new PlageHoraire(new Horaire(9, 0), new Horaire(10, 0)), "Test" + i));
+        }
+    }
+
     public void ajout(Reservation reservation) throws ExceptionPlanning {
         if (chTabReservations[TAILLE - 1] != null) {
             System.out.println("tableau plein");
@@ -47,25 +57,14 @@ public class Planning {
             if (chTabReservations[i] != null && chTabReservations[i].chDate.equals(date)){
                 System.out.println("trouvé");
                 return chTabReservations[i];
-                
+
             }
         }
-        return null; 
+        return null;
 
     }
 
-    public Reservation[] GetReservations (Date parDate){
-        Reservation [] tabres= new Reservation [TAILLE];
-        int nbres=0;
-        for (int i=0;i<chTabReservations.length;i++){
-            if(chTabReservations[i]!=null && chTabReservations[i].chDate.compareTo(parDate)==0){
-                tabres[nbres]=tabres[i];
-                nbres++;
-            }
-        }
-        return tabres;
-
-    }
+   
 
     
 }
