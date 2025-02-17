@@ -1,7 +1,4 @@
-import classes.Date;
-import classes.Horaire;
-import classes.PlageHoraire;
-import classes.Reservation;
+import classes.*;
 
 import java.util.ArrayList;
 import java.util.TreeSet;

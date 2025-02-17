@@ -1,10 +1,12 @@
+package classes;
+
 import classes.Reservation;
 
 import java.util.ArrayList;
 import java.util.TreeSet;
 
 /**
- * La classe PlanningCollections gère un planning utilisant à la fois une ArrayList et un TreeSet pour stocker des réservations.
+ * La classe classes.PlanningCollections gère un planning utilisant à la fois une ArrayList et un TreeSet pour stocker des réservations.
  * Elle permet d'afficher des informations sur les collections de réservations.
  */
 public class PlanningCollections {
