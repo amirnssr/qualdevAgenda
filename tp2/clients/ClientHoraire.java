@@ -1,3 +1,5 @@
+package clients;
+
 import classes.Horaire;
 
 public class ClientHoraire {

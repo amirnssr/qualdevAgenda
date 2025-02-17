@@ -1,5 +1,7 @@
+package interfaces;
+
 /**
- * L'interface ConstantesErreurs contient des constantes de messages d'erreur relatifs à la gestion du planning.
+ * L'interface interfaces.ConstantesErreurs contient des constantes de messages d'erreur relatifs à la gestion du planning.
  */
 public interface ConstantesErreurs {
 

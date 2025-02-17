@@ -1,4 +1,7 @@
+package clients;
+
 import classes.*;
+import interfaces.ConstantesErreurs;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -7,7 +10,7 @@ import java.util.NoSuchElementException;
 import java.util.InputMismatchException;
 
 
-public class ClientPlanning implements ConstantesErreurs{
+public class ClientPlanning implements ConstantesErreurs {
     public static void main (String [ ]args){
 
     
