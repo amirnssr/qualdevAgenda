@@ -91,27 +91,25 @@ public class Date {
         int jourSuivant = chJour;
         int moisSuivant = chMois;
         int anneeSuivante = chAnnee;
-        if (!estValide()){
+
+        if (!estValide()) {
             System.out.println("date pas valable");
+            return null;
         }
-        if (estValide()) {
-            jourSuivant++;
-            if (jourSuivant > dernierjourdumois(chMois, chAnnee)) {
-                jourSuivant = 1;
-                moisSuivant++;
-                if (moisSuivant==12 && jourSuivant==31) {
-                    moisSuivant = 1;
-                    jourSuivant=1;
-                    anneeSuivante++;
-                }
 
+        jourSuivant++;
+        if (jourSuivant > dernierjourdumois(chMois, chAnnee)) {
+            jourSuivant = 1;
+            moisSuivant++;
+            if (moisSuivant > 12) {
+                moisSuivant = 1;
+                anneeSuivante++;
             }
-
-
         }
 
         return new Date(jourSuivant, moisSuivant, anneeSuivante);
     }
+
 
     /**
      * Calcule et retourne la date de la veille.
